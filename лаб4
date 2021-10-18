@@ -1,0 +1,98 @@
+1.
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+int a, b, S, P;
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	cout << "Введите a = ";
+	cin >> a;
+	cout << "Введите b = ";
+	cin >> b;
+	cout << "Площадь S=" << a * b << ", периметр P=" << 2 * (a + b);
+	return 0;
+}
+2.
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+double pi, L, d;
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	pi = 3.14;
+	cout << "Введите диаметр окружности d = ";
+	cin >> d;
+	L = pi * d;
+	cout << "Длина окружности L=" << L;
+	return 0;
+}
+
+3.
+
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+double a, b, S;
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	cout << "Введите a = ";
+	cin >> a;
+	cout << "Введите b = ";
+	cin >> b;
+	S = (a + b) / 2;
+	cout << "Среднее арифметическое S=" << S;
+	return 0;
+}
+4.
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+double a, b, S, R, P, H;
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	cout << "Введите a = ";
+	cin >> a;
+	cout << "Введите b = ";
+	cin >> b;
+	S = a + b;
+	R = a - b;
+	P = a * b;
+	H = a / b;
+	cout << "Сумма S=" << S << "; разность R=" << R << "; произведение P=" << P << "; частное H=" << H << ";";
+	return 0;
+}
+5.
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+double a, b, S, R, P, H;
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	cout << "Введите a = ";
+	cin >> a;
+	cout << "Введите b = ";
+	cin >> b;
+	a = fabs(a);
+	b = fabs(b);
+	S = a + b;
+	R = a - b;
+	P = a * b;
+	H = a / b;
+	cout << "Сумма S=" << S << "; разность R=" << R << "; произведение P=" << P << "; частное H=" << H << ";";
+	return 0;
+}
