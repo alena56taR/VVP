@@ -1,0 +1,131 @@
+1.	
+ #include <iostream>
+#include <math.h>
+
+
+using namespace std;
+double x1, y1, x2, y2, D;
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	cout << "Введите x1=";
+	cin >> x1;
+	cout << "Введите y1=";
+	cin >> y1;
+	cout << "Введите x2=";
+	cin >> x2;
+	cout << "Введите y2=";
+	cin >> y2;
+	D = sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2));
+	cout << "Расстояние между точками (" << x1<<";"<<y1<<") и ("<<x2<<";"<<y2<<") равно "<<D;
+	return 0;
+}
+2.	
+#include <iostream>
+#include <math.h>
+
+
+using namespace std;
+double A,B,C,AC,S,BC;
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	cout << "Введите A=";
+	cin >> A;
+	cout << "Введите B=";
+	cin >> B;
+	cout << "Введите C=";
+	cin >> C;
+	AC = fabs(C - A);
+	BC = fabs(C - B);
+	S = AC + BC;
+	cout << "AC=" << AC << "; BC=" << BC<<"; их сумма S="<<S;
+	return 0;
+}
+3.	
+#include <iostream>
+#include <math.h>
+
+
+using namespace std;
+double A,B,C,AC,P,BC;
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	cout << "Введите A=";
+	cin >> A;
+	cout << "Введите B=";
+	cin >> B;
+	cout << "Введите C=";
+	cin >> C;
+	if (A<C, C<B)
+	{
+	    AC = fabs(C - A);
+	    BC = fabs(C - B);
+	    P = AC * BC;
+	    cout << "AC=" << AC << "; BC=" << BC<<"; их произведение P="<<P;
+	}
+	else
+		cout << "Точка C не  расположена между A и B";
+	return 0;
+}
+4.	
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+double x1, y, x2, y2, a,b,P,S;
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	cout << "Введите x1=";
+	cin >> x1;
+	cout << "Введите y1=";
+	cin >> y;
+	cout << "Введите x2=";
+	cin >> x2;
+	cout << "Введите y2=";
+	cin >> y2;
+	a = fabs(x2 - x1);
+	b = fabs(y2 - y);
+	P = 2 * (a + b);
+	S = a * b;
+	cout << "Площадь S=" << S << "; периметр P=" << P;
+	return 0;
+}
+5.	
+#include <iostream>
+#include <math.h>
+
+
+using namespace std;
+double x1, y, x2, y2, x3, y3, a, b, c, p, P, S;
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	cout << "Введите x1=";
+	cin >> x1;
+	cout << "Введите y1=";
+	cin >> y;
+	cout << "Введите x2=";
+	cin >> x2;
+	cout << "Введите y2=";
+	cin >> y2;
+	cout << "Введите x3=";
+	cin >> x3;
+	cout << "Введите y3=";
+	cin >> y3;
+	a= sqrt((x1 - x2) * (x1 - x2) + (y - y2) * (y - y2));
+	b= sqrt((x2 - x3) * (x2 - x3) + (y2 - y3) * (y2 - y3));
+	c= sqrt((x1 - x3) * (x1 - x3) + (y - y3) * (y - y3));
+	P = a + b + c;
+	p = P / 2;
+	S = sqrt(p * (p - a) * (p - b) * (p - c));
+	cout << "Площадь S=" << S << "; периметр P=" << P;
+	return 0;
+}
