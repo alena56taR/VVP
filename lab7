@@ -1,0 +1,131 @@
+1.
+#include <iostream>
+#include <math.h>
+
+
+using namespace std;
+double a,R,pi;
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	cout << "Введите угол в градусах a=";
+	cin >> a;
+	pi=3,1415926535;
+	R=(a*pi)/180;
+	cout <<"В радианах R="<<R;
+	return 0;
+}
+2.
+#include <iostream>
+#include <math.h>
+
+
+using namespace std;
+double a,R,pi;
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	cout << "Введите угол R=";
+	cin >> R;
+	pi=3,1415926535;
+	a=(R*180)/pi;
+	cout <<"В градусах a="<<a;
+	return 0;
+}
+3.
+#include <iostream>
+#include <math.h>
+
+
+using namespace std;
+double X,Y,X1,A,B;
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	cout << "Введите X кг =";
+	cin >> X;
+	cout << "Введите A руб.=";
+	cin >> A;
+	cout << "Введите Y кг =";
+	cin >> Y;
+	X1=A/X;
+	B=X1*Y;
+	cout <<"1 кг стоит " <<X1<< " руб., " << Y << "кг стоит " << B << " руб.";
+	return 0;
+}
+4.
+#include <iostream>
+#include <math.h>
+
+
+using namespace std;
+double V1,V2,S,T,S1;
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	cout << "Скорость первого автомобиля V1=";
+	cin >> V1;
+	cout << "Скорость второго автомобиля V2=";
+	cin >> V2;
+	cout << "Расстояние между ними S=";
+	cin >> S;
+	cout << "Через какое время? T=";
+	cin >> T;
+	S1=V1*T+V2*T+S;
+	cout <<"Через " << T << " ч расстояние между ними  " << S1 << "км.";
+	return 0;
+}
+5.
+#include <iostream>
+#include <math.h>
+
+
+using namespace std;
+double A,B,x;
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	cout << "Введите A=";
+	cin >> A;
+	cout << "Введите B=";
+	cin >> B;
+	cout <<A<< "*x+" << B << "=0"<< "\n"<<A<<"*x="<<-B<<"\n"<<"x="<<(-B)/A;
+	return 0;
+}
+6.
+#include <iostream>
+#include <math.h>
+
+
+using namespace std;
+double A1,A2,B1,B2,C1,C2,x,y;
+
+int
+main ()
+{
+  setlocale (LC_ALL, "Russian");
+  cout << "Введите A1=";
+  cin >> A1;
+  cout << "Введите A2=";
+  cin >> A2;
+  cout << "Введите B1=";
+  cin >> B1;
+  cout << "Введите B2=";
+  cin >> B2;
+  cout << "Введите C1=";
+  cin >> C1;
+  cout << "Введите C2=";
+  cin >> C2;
+  x = (C1 * B2 - C2 * B1) / (A1 * B2 - A2 * B1);
+  y = (A1 * C2 - A2 * C1) / (A1 * B2 - A2 * B1);
+  if (x==-0)
+    x=0;  
+  if (y==-0)
+    y=0;
+  cout << "x="<<x<<"y="<<y;
+}
