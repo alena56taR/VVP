@@ -1,0 +1,102 @@
+1.
+#include <iostream>
+#include <math.h>
+
+
+using namespace std;
+int N,c;
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	cout << "С начала суток прошло секунд N=";
+	cin >> N;
+	c = N % 60;
+	cout << "С начала последней минуты прошло c=" << c << " секунд.";
+	return 0;
+}
+
+
+2.
+#include <iostream>
+#include <math.h>
+
+
+using namespace std;
+int K;
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	cout << "Введите целое число K=";
+	cin >> K;
+	K = K % 7;
+	cout << "Номер дня недели: " << K;
+	return 0;
+}
+
+3.
+#include <iostream>
+#include <math.h>
+
+
+using namespace std;
+int K,N;
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	cout << "Введите целое число (1-365) K=";
+	cin >> K;
+	cout << "Введите целое число (1-7) N=";
+	cin >> N;
+	K = (K + N - 2) % 7 + 1;
+	cout << "Номер дня недели: " << K;
+	return 0;
+}
+
+
+4.
+#include <iostream>
+#include <math.h>
+
+
+using namespace std;
+int A,B,C,k,n;
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	cout << "Введите A=";
+	cin >> A;
+	cout << "Введите B=";
+	cin >> B;
+	cout << "Введите C=";
+	cin >> C;
+	k = int(A / C) * int (B / C);
+	n = A * B - C * C * k;
+	cout << "Количество квадратов: " << k << ", площадь незанятой части:" << n;
+	return 0;
+}
+5.
+#include <iostream>
+#include <math.h>
+
+
+using namespace std;
+int N;
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	cout << "Введите номер года N=";
+	cin >> N;
+	if (N % 100 > 0)
+		N = int(N / 100) + 1;
+	else
+		N = int(N / 100);
+	cout << "Номер столетия " << N;
+	return 0;
+}
+
+
