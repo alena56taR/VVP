@@ -1,0 +1,158 @@
+1.
+#include <iostream>
+#include <math.h>
+
+
+using namespace std;
+int A,B;
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	cout << "Введите A=";
+	cin >> A;
+	cout << "Введите B=";
+	cin >> B;
+	if (A > 2 && B <= 3)
+		cout << "Выражение A>2 и B<=3 верно";
+	else
+		cout << "Выражение A>2 и B<=3 неверно";
+	return 0;
+}
+
+
+2. 
+#include <iostream>
+#include <math.h>
+
+
+using namespace std;
+int A,B,C;
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	cout << "Введите A=";
+	cin >> A;
+	cout << "Введите B=";
+	cin >> B;
+	cout << "Введите C=";
+	cin >> C;
+	if (A < B && B < C)
+		cout << "Выражение A<B<C верно";          
+	else
+		cout << "Выражение A<B<C неверно";
+	return 0;
+}
+
+3.
+#include <iostream>
+#include <math.h>
+
+
+using namespace std;
+int  A;
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	cout << "Введите A=";
+	cin >> A;
+	if (A % 2 == 0 && A > 9 && A < 100)
+		cout << "Выражение «Данное число является четным двузначным» верно";
+	else
+		cout << "Выражение «Данное число является четным двузначным» неверно";
+	return 0;
+}
+
+4.
+#include <iostream>
+#include <math.h>
+
+
+using namespace std;
+int  A, a, b, c;
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	cout << "Введите A=";
+	cin >> A;
+	a = int(A / 100);
+	b = int((A % 100) / 10);
+	c = ((A % 100) % 10);
+	if (a<b && b<c || a>b && b>c)
+		cout << "Выражение «Цифры данного числа образуют возрастающую или убывающую последовательность» верно";
+	else
+		cout << "Выражение «Цифры данного числа образуют возрастающую или убывающую последовательность» неверно";
+	return 0;
+}
+5. 
+#include <iostream>
+#include <math.h>
+
+
+using namespace std;
+int  A;
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	cout << "Введите A=";
+	cin >> A;
+	if (A % 10 == A / 1000 & A % 100 / 10 == A % 1000 / 100)
+		cout << "Выражение «Данное число читается одинаково слева направо и справа налево» верно";
+	else
+		cout << "Выражение «Данное число читается одинаково слева направо и справа налево» неверно";
+	return 0;
+}
+
+6.
+#include <iostream>
+#include <math.h>
+
+
+using namespace std;
+int  a, b, c;
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	cout << "Введите a=";
+	cin >> a;
+	cout << "Введите b=";
+	cin >> b;
+	cout << "Введите c=";
+	cin >> c;
+	a = a * a;
+	b = b * b;
+	c = c * c;
+	if ((a+b==c) || (b+c==a) || (a+c==b))
+		cout << "Выражение «Треугольник со сторонами a, b, c является прямоугольным» верно";
+	else
+		cout << "Выражение «Треугольник со сторонами a, b, c является прямоугольным» неверно";
+	return 0;
+}
+7.
+#include <iostream>
+#include <math.h>
+
+
+using namespace std;
+int  a, b, c;
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	cout << "Введите a=";
+	cin >> a;
+	cout << "Введите b=";
+	cin >> b;
+	cout << "Введите c=";
+	cin >> c;
+	if ((a+b)>c && (b+c)>a && (a+c)>b)
+		cout << "Выражение «Треугольник со сторонами a, b, c существует» верно";
+	else
+		cout << "Выражение «Треугольник со сторонами a, b, c существует» неверно";
+	return 0;
+}
