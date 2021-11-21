@@ -1,0 +1,230 @@
+1.
+#include <iostream>
+#include <math.h>
+
+
+using namespace std;
+int A, B;
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	cout << "Введите A=";
+	cin >> A;
+	cout << "Введите B=";
+	cin >> B;
+	if (A == B)
+	{
+		A = 0;
+		B = 0;
+		cout << "A=" << A << ", B = " << B;
+	}
+	
+	if (A > B)
+	{
+		B = A;
+		cout << "A=" << A << ", B = " << B;
+	}
+	if (B > A)
+	{
+		A = B;
+		cout << "A=" << A << ", B = " << B;
+	}
+	
+		
+	return 0;
+}
+
+
+
+2. 
+#include <iostream>
+#include <math.h>
+
+
+using namespace std;
+int A, B, C;
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	cout << "Введите A=";
+	cin >> A;
+	cout << "Введите B=";
+	cin >> B;
+	cout << "Введите C=";
+	cin >> C;
+	if (A<=B&&A<=C)
+	{
+		cout << "B+C=" << B+C;
+	}
+	
+	else 
+	{
+		if (B<=A&&B<=C)
+		{
+		cout << "A+C" << A + C;
+		}
+		else
+		{
+			cout << "A+B" << A + B;
+		}
+	}
+	return 0;
+}
+
+3. 
+#include <iostream>
+#include <math.h>
+
+
+using namespace std;
+double Xa,Xb,Xc,Ya,Yb,Yc, AB, AC;
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	cout << "Введите Xa=";
+	cin >> Xa;
+	cout << "Введите Xb=";
+	cin >> Xb;
+	cout << "Введите Xc=";
+	cin >> Xc;
+	cout << "Введите Ya=";
+	cin >> Ya;
+	cout << "Введите Yb=";
+	cin >> Yb;
+	cout << "Введите Yc=";
+	cin >> Yc;
+	AB = sqrt(pow((Xa - Xb), 2) + pow((Ya - Yb), 2));
+	AC = sqrt(pow((Xa - Xc), 2) + pow((Ya - Yc), 2));
+	if (AB < AC)
+	{
+		cout << "Ближайшая точка B (" << Xb << ";" << Yb << ") на расстоянии " << AB;
+	}
+	if (AB > AC)
+	{
+		cout << "Ближайшая точка C (" << Xc << ";" << Yc << ") на расстоянии " << AC;
+	}
+	if (AB == AC)
+	{
+		cout << "Точки B и C равноудалены от A";
+	}
+	return 0;
+}
+
+
+
+
+
+
+4.
+#include <iostream>
+#include <math.h>
+
+
+using namespace std;
+int x,y;
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	cout << "Введите x=";
+	cin >> x;
+	cout << "Введите y=";
+	cin >> y;
+	if (x > 0)
+	{
+		if (y > 0)
+	        cout << "Точка принадлежит первой координатной четверти";
+		else 
+			cout << "Точка принадлежит четвертой координатной четверти";
+	}
+	else
+	{
+		if (y > 0)
+			cout << "Точка принадлежит второй координатной четверти";
+		else
+			cout << "Точка принадлежит третьей координатной четверти";
+	}
+	return 0;
+}
+5. 
+#include <iostream>
+#include <math.h>
+
+
+using namespace std;
+int A;
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	cout << "Введите A=";
+	cin >> A;
+	if (A > 0)
+	{
+		if (A % 2 == 0)
+	        cout << "Число A положительное четное";
+		else 
+			cout << "Число A положительное нечетное";
+	}
+	else
+	{
+		if (A < 0)
+		{
+			if (A % 2 == 0)
+				cout << "Число A отрицательное четное";
+			else
+				cout << "Число A отрицательное нечетное";
+		}
+		else
+			cout << "Число A нулевое";
+	}
+	return 0;
+}
+6.
+#include <iostream>
+#include <math.h>
+
+
+using namespace std;
+int A;
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	cout << "Введите A=";
+	cin >> A;
+	if (A % 2 == 0)
+	{
+		if (A / 100 > 0 )
+			cout << " Число A четное трехзначное ";
+		else
+		{
+			if (A / 10 > 0 && A / 10 < 10)
+				cout << "Число A четное двухзначное ";
+			else
+			{
+				if (A / 10 == 0)
+					cout << "Число A четное однозначное ";
+			}
+		}
+	}
+	else
+	{
+		if (A / 100 > 0)
+			cout << " Число A нечетное трехзначное ";
+		else
+		{
+			if (A / 10 > 0 && A / 10 < 10)
+				cout << "Число A нечетное двухзначное ";
+			else
+			{
+				if (A / 10 == 0)
+					cout << "Число A нечетное однозначное ";
+			}
+		}
+	}
+	return 0;
+}
