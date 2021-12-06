@@ -1,0 +1,113 @@
+1.	
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	float c, m;
+	cout << "Стоимость 1 кг конфет:";
+	cin >> c;
+	cout << "Стоимость " << endl;
+	for (m = 0.1; m < 1.1; m += 0.1)
+		cout << m << " kg = " << c * m << endl;
+	return 0;
+}
+2.	
+#include <iostream>
+#include <windows.h>
+
+	
+
+
+using namespace std;
+
+
+int main() 
+{
+	int N;
+	double p = 1;
+	double a = 1.1;
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
+	setlocale(LC_ALL, "Russia");
+	cout << "N = ";
+	cin >> N;
+	for (int i = 1; i <= N; ++i) 
+	{
+		p *= a;
+		a += 0.1;
+	}
+	cout << "Результат = " << p;
+	return 0;
+}
+3.	
+#include <iostream>
+using namespace std;
+
+int main() {
+	setlocale(LC_ALL, "Russian");
+	int n;
+	cout <<  "N:";
+	cin >> n;
+
+	int rez = 0;
+	int i;
+	for (i = 1; i <= (2 * n - 1); i += 2)
+	{
+		rez += i;
+		cout << rez << endl;
+	}
+}
+4.	
+#include <iostream>
+using namespace std;
+
+int main() {
+	setlocale(LC_ALL, "Russian");
+	float A;
+	cout << "A:";
+	cin >> A;
+
+	int n;
+	cout << "N:";
+	cin >> n;
+
+
+	float k = 1, rez = 1;
+	int i;
+
+	for (i = 1; i <= n; ++i)
+	{
+		k *= A;
+		rez += k;
+	}
+	cout << rez;
+}
+
+5.	
+#include <iostream>
+using namespace std;
+
+int main() {
+	setlocale(LC_ALL, "Russian");
+	float A;
+	cout << "A:";
+	cin >> A;
+
+	int n;
+	cout << "N:";
+	cin >> n;
+
+
+	float k = 1, rez = 1;
+	int i;
+
+	for (i = 1; i <= n; ++i)
+	{
+		k *= -A;
+		rez += k;
+	}
+	cout << rez;
+}
